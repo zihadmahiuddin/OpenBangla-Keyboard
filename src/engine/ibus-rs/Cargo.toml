@@ -1,0 +1,13 @@
+[package]
+name = "ibus-rs"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+ibus = { git = "https://github.com/zihadmahiuddin/ibus-rs" }
+lazy_static = "1.4.0"
+qt_core = "0.5.0"
+riti = { git = "https://github.com/zihadmahiuddin/riti", branch = "ibus-rust" }
+
