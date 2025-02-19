@@ -19,7 +19,6 @@
 #ifndef _FCITX5_OPENBANGLA_OPENBANGLA_H_
 #define _FCITX5_OPENBANGLA_OPENBANGLA_H_
 
-#include "riti.h"
 #include <fcitx-config/configuration.h>
 #include <fcitx-config/iniparser.h>
 #include <fcitx-utils/i18n.h>
@@ -29,6 +28,14 @@
 #include <fcitx/inputmethodengine.h>
 #include <fcitx/instance.h>
 #include <filesystem>
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+  #include "riti.h"
+#ifdef __cplusplus
+}
+#endif
 
 namespace fcitx {
 

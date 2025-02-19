@@ -22,8 +22,15 @@
 #include <map>
 #include <stdexcept>
 #include <ibus.h>
-#include "riti.h"
 #include "Log.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+  #include "riti.h"
+#ifdef __cplusplus
+}
+#endif
 
 /* Here we map iBus keycodes with riti's. */
 

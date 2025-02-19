@@ -20,10 +20,17 @@
 #ifndef KEYCODE_H
 #define KEYCODE_H
 
-#include "riti.h"
 #include <fcitx-utils/keysym.h>
 #include <map>
 #include <stdexcept>
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+  #include "riti.h"
+#ifdef __cplusplus
+}
+#endif
 
 /* Here we map Fcitx keycodes with riti's. */
 constexpr uint16_t VC_UNKNOWN = 0x0046;

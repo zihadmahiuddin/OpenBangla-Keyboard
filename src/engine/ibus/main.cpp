@@ -1,10 +1,17 @@
 #include <ibus.h>
 #include <QDebug>
-#include "riti.h"
 #include "keycode.h"
 #include "FileSystem.h"
 #include "Settings.h"
 #include "Log.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+  #include "riti.h"
+#ifdef __cplusplus
+}
+#endif
 
 static RitiContext *ctx = nullptr;
 static Config *config = nullptr;
